@@ -1,0 +1,22 @@
+## this file is provided for use in the bonus question of the programming homework assignment
+## this file is written in Python code
+
+## helium spectral line data (these are Python "dictionaries")
+Z0 = {'label':r'ZZ',    'degrees':0.  , 'arcmins':0.,   'color':r'#FFFAD2' , 'intensity':1.,  'order':0 }
+A0 = {'label':r'$A_R$', 'degrees':7.5 , 'arcmins':5.,   'color':r'#2231ff' , 'intensity':.8,  'order':1 }
+A1 = {'label':r'$A_L$', 'degrees':-7.5, 'arcmins':-5.,  'color':r'#2231ff' , 'intensity':.8,  'order':1 }
+B0 = {'label':r'$B_R$', 'degrees':7.5 , 'arcmins':29.,  'color':r'#1845e6' , 'intensity':.6,  'order':1 }
+B1 = {'label':r'$B_L$', 'degrees':-7.5, 'arcmins':-29., 'color':r'#1845e6' , 'intensity':.6,  'order':1 }
+C0 = {'label':r'$C_R$', 'degrees':8.  , 'arcmins':23.,  'color':r'#07d3De' , 'intensity':.7,  'order':1 }
+C1 = {'label':r'$C_L$', 'degrees':-8. , 'arcmins':-23., 'color':r'#07d3De' , 'intensity':.7,  'order':1 }
+D0 = {'label':r'$D_R$', 'degrees':8.5 , 'arcmins':0.,   'color':r'#02fffa' , 'intensity':.9,  'order':1 }
+D1 = {'label':r'$D_L$', 'degrees':-8.5, 'arcmins':-0.,  'color':r'#02fffa' , 'intensity':.9,  'order':1 }
+E0 = {'label':r'$E_R$', 'degrees':10. , 'arcmins':1.,   'color':r'#FAFF41' , 'intensity':.95, 'order':1 }
+E1 = {'label':r'$E_L$', 'degrees':-10., 'arcmins':-1.,  'color':r'#FAFF41' , 'intensity':.95, 'order':1 }
+F0 = {'label':r'$F_R$', 'degrees':11. , 'arcmins':24.,  'color':r'#FF80A9' , 'intensity':.7,  'order':1 }
+F1 = {'label':r'$F_L$', 'degrees':-11., 'arcmins':-24., 'color':r'#FF80A9' , 'intensity':.7,  'order':1 }
+G0 = {'label':r'$G_R$', 'degrees':12. , 'arcmins':10.,  'color':r'#DE4C4F' , 'intensity':.6,  'order':1 }
+G1 = {'label':r'$G_L$', 'degrees':-12., 'arcmins':-10., 'color':r'#DE4C4F' , 'intensity':.6,  'order':1 }
+
+## list of lines
+lines = [Z0,A0,A1,B0,B1,C0,C1,D0,D1,E0,E1,F0,F1,G0,G1]

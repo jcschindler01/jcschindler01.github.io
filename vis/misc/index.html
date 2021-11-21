@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Vis - Misc"
+---
+
+{% include mathjax.html %}
+
+<div class="vispage">
+  
+  <h2>Miscellaneous</h2>
+
+  <p>*Download or directly view image files for higher resolution.*</p>
+
+  <h3 id="modes" style="margin-top:30px;">Coupled Harmonic Oscillator Lattice Eigenmodes</h3>
+  <p>Plot of eigenvectors (mode configurations) and eigenvalues (mode frequencies) for a classical lattice of coupled harmonic oscillators, with open, closed, and periodic boundary conditions. These were generated from <a href="harmonic-lattice.py">harmonic-lattice.py</a>. A full description of the Lagrangian is commented in the code.</p>
+  <p>
+    In these plots, each eigenvector is plotted with its eigenvalue given by x-axis height (the same way, eg, that particle in a box modes are often depicted). 
+    <br>Caution: If you click, get ready to SCROLL a LOT!
+  </p>
+  <div>
+    <a href="eigvecs_N(51)_mu(0d5)_V(Vij_closed).pdf" target="_blank" rel="noopener noreferrer">eigvecs_N(51)_mu(0d5)_V(Vij_closed).pdf</a>
+    <br>
+    <a href="eigvecs_N(51)_mu(0d5)_V(Vij_open).pdf" target="_blank" rel="noopener noreferrer">eigvecs_N(51)_mu(0d5)_V(Vij_open).pdf</a>
+    <br>
+    <a href="eigvecs_N(51)_mu(0d5)_V(Vij_periodic).pdf" target="_blank" rel="noopener noreferrer">eigvecs_N(51)_mu(0d5)_V(Vij_periodic).pdf</a>
+  </div>
+  <p>And here is an example (different params) of the eigenvalues coalescing as BCs transition from closed to periodic.</p>
+  <div>
+    <a href="eigvals_vs_lambda_N(6)_x(0.5)_lopen(0.0-to-0.0)_lper(0.0-to-1.0).pdf" target="_blank" rel="noopener noreferrer">eigvals_vs_lambda_N(6)_x(0.5)_lopen(0.0-to-0.0)_lper(0.0-to-1.0).pdf</a>
+  </div>
+
+  <h3 id="osc-eig" style="margin-top:30px;">QSHO States</h3>
+  <p>Various states of a quantum simple harmonic oscillator, shown in both position and number bases. (Note: missing mag squared signs in annotation text of image.)</p>
+  <div>
+    <img src="osc_anim.gif">
+  </div>
+
+  <h3 id="induced-prob" style="margin-top:30px;">Induced Probability Density on Qubit Subsystems</h3>
+  <p>The file below shows some properties of a qubit embedded within a higher dimensional pure subsystem.</p>
+  <div>
+    <a href="qubit-induced.pdf" target="_blank" rel="noopener noreferrer">qubit-induced.pdf</a>
+  </div>
+
+</div>
+
+
+
+
+
+
+

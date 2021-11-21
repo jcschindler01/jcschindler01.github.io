@@ -1,0 +1,107 @@
+---
+layout: default
+title: "Quantum Fields"
+---
+
+{% include mathjax.html %}
+
+<div class="vispage">
+  
+  <h2>QFT Fields</h2>
+
+  <p>*Download or directly view image files for higher resolution.*</p>
+
+  <p>These images were generated with <a href="psi.py">psi.py</a> and <a href="wave_animation.py">wave_animation.py</a>.</p>
+
+
+  <h3 id="fieldpic" style="margin-top:30px;">Visualizing the Fields in QFT</h3>
+  
+  <p>
+    We often think of states in quantum field theory in terms of "particles". But what if we want to visualize QFT states directly in terms of fields?
+  </p>
+
+  <p>
+    One way to approach the problem is to look at the marginal probability density distribution of the field variable (e.g. Klein-Gordon \(\phi\) in a scalar theory) at each point in spacetime. That is, to look at the marginal reduced densities \(  \rho(\phi(x),\phi(x)) \). The practical way to do this is by approximating a scalar field with a lattice of coupled harmonic oscillators. This has been carried through nicely in simple cases by <a href="phonon.pdf" target="_blank" rel="noopener noreferrer">Johnson and Gutierrez 2002</a>.
+  </p>
+
+  <p>
+    Now, in introductory QM we usually consider single-particle states which in free scalar field theory take the form
+    \[  |\psi\rangle = \int dk \;  \psi(k) \;  a^{\dagger}_k |0\rangle . \]
+    Defining \( \psi(x) \) by the Fourier transform, these states will obey a relativistic Schrodinger equation
+    \[ \partial_t \psi(x,t) = -i \sqrt{-\partial_x^2 + m^2} \; \psi(x,t) \]
+    (see e.g. <a href="https://doi.org/10.1103/PhysRevD.36.2381" target="_blank" rel="noopener noreferrer">https://doi.org/10.1103/PhysRevD.36.2381</a>) that reduces to the standard non-relativistic one at low energies. A typical state would be a Gaussian wavepacket wavefunction.
+  </p>
+
+  <p>
+    What do these single-particle wavepacket states look like at the field level?
+  </p>
+
+
+
+  <h3 id="classical" style="margin-top:30px;">Wavefunction of a Classical Field?</h3>
+
+  <p>
+    Given a single particle wavepacket quantum state, what should we even <em>expect</em> the field picture to look like? 
+  </p>
+
+  <p>
+    Here is one idea. For every real solution of \( ( \partial_t^2 - \partial_x^2 + m^2) \, \varphi = 0 \) there is a unique complex solution of \( \partial_t \psi = - i \sqrt{-\partial_x^2 + m^2} \; \psi \) such that \( \phi = {\rm Re}(\psi) \). We can tentatively call \(\psi\) the "classical wavefunction" for \(\phi\).
+  </p>
+
+  <p>
+    What does this classical wavefunction look like? The following animations show the wave and wavefunction for both low and high energy normalized wavepackets. Boundary conditions are closed (clamped) at the edges. The energy density, time derivative, dispersion, and spectrum, are also plotted. Note you can read off the relativistic-ness of the behavior by comparing the spectrum and dispersion plots.
+  </p>
+
+  <p>
+    Short time scale left. Longer time scale (note phase aliasing) right. See annotation text for details.
+  </p>
+
+  <p>Low Energy</p>
+  <div style="">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3dTwYC8y_JEN6d92daQujXTdCEMhpUKYEnS-7OCMqe9wtOciOLUEs6K95TcLLtqNjIEpzBKlL9LPnbSehsMAGQ_UiXtkdBzdEiB4WY3AGoxfBQimXJyYdBfu6Zf1vUEPBAWaKTWFchzI5Ok_R59DSD5=w822-h657-no?authuser=0" width=600px>
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3dvG1H3Y6zd6XpqqKMH58budfCmQwQdZMidnC2BUAQYHw8YFpvF2wU5hhGN5vs1bl2j9_pYvYOmf_6ZF-xFL0SJnpY4zS-afuceG7z4ErnjuGIqoNaaXxzocLOTcO3dI55a3pvxu_RjfwC9vrr5OysR=w822-h657-no?authuser=0" width=600px>
+  </div>
+  <p>Medium Energy</p>
+  <div style="">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3ca7jVli2SMqqSuQhHzKsKIj_MGNimE5CQlQ8GxtzJwDMjMmEbHxW2BjCnKszkgB8CVbB9Q4bmIDH5KhSujhJxTdhnr0JnVNGqL6foUoggKdU4YKCSXl9YXcShHFirHV_yv4MhO3VAizYz4iLpPGel1=w822-h657-no?authuser=0" width=600px>
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3dkp34sCvX-A5oRAjQ6e87hG-D_4f1zxeTBoP88cqC4I6FMgCGOP-bjcSbYUNnbL5nVwSvmFeT8DGd7xcNGZp9aaKviALMOO8ZHN5wCSVY2BdWOqd65-JZy819ThGEUXGwWoPU1Yx_QaqPv3UNfy2NF=w822-h657-no?authuser=0" width=600px>
+  </div>
+  <p>High Energy</p>
+  <div style="">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3c_i1EMtmN5KrikAQq5VZ3NZFWUMRPzFpuNezQEcVNtf0B8XdSKwVwBoR41boGtHJw-yA5986DO7c7a11thXJ9GtO-qkWQ8X3Et31dhnWwNVU2SopDS5NSGc8cnT2-xY99abMKuSdELiob3DlTo5v4i=w822-h657-no?authuser=0" width=600px>
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fokxcuCemadUo6zIEbgSKzePLtw2A2Bvdx0FeSlNO0Xc0hcz0ADc5PYE-gTg6vF4Hofx6B5LOcIGdZZKOHE1D02uGid7sRnKWS6iuwMQkkqekDxmrCqN3BEN5JCYQ5erLGiLK9lcET8bUVPQ3ppoZn=w822-h657-no?authuser=0" width=600px>
+  </div>
+
+
+
+
+  <h3 id="quantum" style="margin-top:30px;">Wavefunction of a Classical Field?</h3>
+
+  <p>
+    So does it work? Does identifying the quantum and classical wavefunctions correctly relate the classical and fields? To check, let's simplify the lattice to just a pair of coupled oscillators and look at both classical and quantum states with same "single-particle wavefunction" \( \vec{\psi} \).
+  </p>
+
+  <p>
+    In the animation below, blue color scale shows the joint (left) and marginal (right) quantum probabilities for a single-particle state. Green dots show the classical configuration \( \vec{\phi} = {\rm Re}  \vec{\psi}\) of the oscillators. Pink dots show the magnitude squared of the oscillator wavefunction \( \vec{\psi}\) where \( \vec{\phi} = {\rm Re}  \vec{\phi}\).
+  </p>
+
+  <p>
+    Note the key distinction between the "single-particle wavefunction" \( \psi(x) \) (pink dots, vector) and the quantum field wavefunction \( \Psi[\phi(x)] \) (color scale, probability).
+  </p>
+
+  <div style="">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fFpLbPUK8ejNB5Aw0XKqemdwGTUdbJ33fExk52IigqKOwPiqAOQncJIrGMu1JXtvxnheS9Shgpjr53uclm0jjhfsQ7-_LzIph-o_Ztrk-dIyfh16MdO0r8wJPnOUaMcUwA2f1-uLQBr8TKBJ-qxsex=w1000-h500-no?authuser=0" width=800px>
+  </div>
+
+  <p>
+    There is clearly a connection, but precisely what that connection is is a little bit befuddling. Is there more can we learn from this line of questioning?
+  </p>
+
+</div>
+
+
+
+
+
+
+

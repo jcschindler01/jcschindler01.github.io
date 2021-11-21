@@ -1,0 +1,36 @@
+
+.twocol {
+  width: 100%;
+  text-align: center;
+  padding-top:20px;
+}
+
+.leftcol {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.rightcol {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.aboutme p {
+  text-align: left;
+  width: 250px;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.bio {
+}
+
+.leftcol li {
+  margin: 5px 0;
+}
+

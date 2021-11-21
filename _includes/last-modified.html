@@ -1,0 +1,16 @@
+<div id='last-modified'>Last Modified: YYYY-MM-DD</div>
+
+<!-- Script to get modified date from github. Modified from https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html -->
+<script>
+function setModifiedDate() {
+  if (document.getElementById('last-modified')) {
+    fetch("https://api.github.com/repos/jcschindler01/jcschindler01.github.io/commits?sha=main")
+      .then(x => x.json())
+      .then(y => {
+        var modified = y[0]['commit']['committer']['date'].slice(0,10);
+        document.getElementById('last-modified').innerHTML = "Last Modified: " + modified;
+      });
+    }
+  }
+setModifiedDate();
+</script>

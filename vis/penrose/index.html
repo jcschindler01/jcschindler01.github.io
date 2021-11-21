@@ -1,0 +1,216 @@
+---
+layout: default
+title: "Penrose Diagrams"
+---
+
+{% include mathjax.html %}
+
+<div class="vispage">
+  
+  <h2>Penrose Diagrams</h2>
+
+  <p>*Download or directly view image files for higher resolution.*</p>
+
+  <p>
+    Penrose diagrams are a tool for visualizing the causal structure of curved spacetimes.
+    <br>
+    In these diagrams, causal cones emanate from each point at 45 degree angles, just like in flat Minkowski space.
+    <br>
+    For more info see <a href="https://arxiv.org/abs/1802.02263" target="_blank" rel="noopener noreferrer">arxiv:1802.02263</a>, <a href="https://arxiv.org/abs/1907.04879" target="_blank" rel="noopener noreferrer">arxiv:1907.04879</a>, and <a href="https://github.com/jcschindler01/xhorizon" target="_blank" rel="noopener noreferrer">xhorizon</a>.
+    <br>
+    All diagrams below are xhorizon diagrams unless otherwise stated.
+  </p>
+  <p style="margin-bottom: 5px;">
+    Jump to section:
+  </p>
+  <ul style="margin-top: 0px; margin-bottom: 25px;">
+    <li><a href="#mink">Minkowski</a></li>
+    <li><a href="#ds">dS and AdS</a></li>
+    <li><a href="#schwarzschild">Schwarzschild</a></li>
+    <li><a href="#rn">Reissner Nordstrom</a></li>
+    <li><a href="#collapse">Schwarzschild Formed by Collapse</a></li>
+    <li><a href="#dtr">Shell Collisions</a></li>
+    <li><a href="#form-evap-schematic">Schematic: Forming and Evaporating Black Hole</a></li>
+    <li><a href="#form-evap-hayward">Forming and Evaporating Hayward Black Hole</a></li>
+    <li><a href="#form-evap-dS">Forming and Evaporating Black Hole in dS/AdS Background</a></li>
+    <li><a href="#misc">Miscellaneous</a></li>
+  </ul>
+  <p>
+    All metrics below locally have the form 
+    \( ds^2 = -f(r) \, dt^2 + f(r)^{-1} \, dr^2 + r^2 \; d\Omega^2\).
+    <br>Time dependence arises by gluing these local metrics along null shell junctions.
+    <br>The "mass function" \(m(r) \) is defined by \(f(r) = 1 - 2 \, m(r) /r \).
+  </p>
+  <p>
+    <small><b>Conformal vs. Coordinate Diagrams:</b></small> Diagrams shown here are exact coordinate diagrams of the spacetime in "Penrose diagram coordinates". That is, in coordinates that allow one to read off the causal structure. This allows internal causal structure to be depicted as well as the structure of infinity. See Sec. IV of <a href="https://arxiv.org/abs/1907.04879" target="_blank" rel="noopener noreferrer">arxiv:1907.04879</a> for further discussion.
+  </p>
+
+  <h3 id="mink" style="margin-top:30px;">Minkowski</h3>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3d9s-1hMNa-FSTWGwkHvP789r1jzqvw3lV5DOYdnhzQ0y_qrQRX1EJXzRARJ6plO3pHYOXKWDDSYPCr7k8msi7IWuNMXFbEtCnjrelc_Nq19bcFFs_4MmEApfZwLfyzs7S3nmsSyyhDpAFoB5Q6u7i6=s657-no?authuser=0">
+  </div>
+  
+  <h3 id="ds">dS and AdS</h3>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3crcWvpnU5jcDnnZAjTL-acQmhmAmMqcy82xchl-fKSWvSxbRBBcl4SuQMczA0ye-08RJ7NlPJptv5qRDcHbzdVWjfE6KYpihJJEASRzAjXD1IJh7y9Jo2Au8kNfGooy542iCcfGwVUV9cFjZ5_5IE1=s657-no?authuser=0">
+  </div>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3f5yookWLt-Lo-rgLQwpkuGXXRSOfAXwZME_hnZvIUPOYnMWerNEjDt9wBcZOnSAS8zDjiRWXusCpI3YZwPFWkDavkkwLUdbFu1GBZGL1nMhqdUnxKoFlbdHmhgfzVtVrkBUn3hmGwugfnQUuSp60Sj=s657-no?authuser=0">
+  </div>
+
+  <h3 id="schwarzschild">Schwarzschild</h3>
+
+  <h4>xhorizon diagram</h4>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3dnLh8OvxhsLbxKa6g7w0aCZ7jMX5DgWaq1ZeVkalshf8FgFqSlQFd0GFBpUJGa_pcACikEAYCidR_5ShUS-ULrvYK1gIQ0UFJ55atQFUjAgkY2bFR9H8HrMgel5rFPG_k9rzJGwzUFmB4xyM-eWFzz=s657-no?authuser=0">
+  </div>
+
+  <h4 id="kruskal">Classic Kruskal style diagram.</h4>
+  <p> 
+    Schwarzschild radius is R=1. (a) Constant radius line spacing is dr=0.1. (b) The \(\partial_t\) Killing vector field.
+  </p>
+  <p>
+    Reflection symmetry within individual blocks of the Kruskal diagram arises from the interesting fact that \( \tan^{-1} e^x - \pi/4 \) is odd.
+  </p>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3eM2-hCCn9aA6p9RYC50IxyoKhtN26jd9Bt180jkAOGmmKSng4S5wenzsLOENN46zSzv_Fg_31dQ11AtJyb0UvUDcUEtsKQzrXUCZ9Zq-y-3pA_fl4MT2bW87KP55io4QJRLKrm5_K2KzBdkV1FejGs=s657-no?authuser=0">
+  </div>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3clyn2DjPFf6P7AJdosV5AaNT-pPRgZYW570sZLjaEhHRydGtguIOQPrfyzbhiLr9jT1Kf3bEJTc7cy5DfloNJ3R3MnyiWgAz3UcJDqHOmsjY3VGqcYn5JhyZXeEZg76nwGZTdRFEGxh3hr4Tou4uyx=w896-h657-no?authuser=0" height=400px style="max-width: 200%">
+  </div>
+
+  <h4 id="kerr-schild">In Kerr-Schild Coordinates</h4>
+  <p>***This \(t\) is not the same as Schwarzschild time***</p>
+  <p>
+    This depicts an ingoing patch of Schwarzschild spacetime in Kerr-Schild coordinates, using an xhorizon diagram. The metric is
+    \[ ds^2 = -dt^2 + dr^2 + r^2 \, d\Omega^2 + \tfrac{2m(r)}{r} \left( dt + dr \right)^2. \]
+    While not so commonly used, this form of the metric is quite useful because: (1) it is written explicitly as a perturbation of the flat metric; and (2) it can be immediately extended to include rotation, charge, and other mass distributions. The Schwarzschild case is m(r) = M.
+  </p>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3dgpZywUkGMO6bZ0-4HOmvTbDYwZj5fzahdUoCWwqsgZSNV0IfbO1ilist_dj1j12_2DEPaizdTSWDTV2zC5l6YNmHoEmDZQ_jjC2NIBSfCyhS-gMMEQBtyzso2qicSYTUCJrIYfiiA408lAnUpSFXu=s600-no?authuser=0">
+  </div>
+
+
+  <h3 id="rn">Reissner Nordstrom</h3>
+  <p>The first case is nearly extremal. The second one, with a small charge, may be more realistic. Note how the small scale lines of constant radius bundle up.</p>
+
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fAFD-0Cnshua5iObfveUAiDHBYMZT4srs00rwxfhak_umhULR2cMyw_fLZuGRDSvSGO6GQHaN1i_A5R3KjLNZRGtu9puLjRcB1fLLMpYqDZiIXXjEMVmmxFk6GHYeLidSxMuas6Q0JX_G451TPqS_g=s600-no?authuser=0">
+  </div>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fb_zEBR6uqlL6mzdf7xDotJAu7QNfl5aj_uz9YrRG85bdFbesz_Wbr-bdHGzMjdqjY-I8Bf_s4DAVJEtxbwZ5g1rOfbxJWyPko7PFg2lWwUa5B0hAJo0udb--PGE8c10TBWlMFj6trF3-Mj4d2iTdV=s600-no?authuser=0">
+  </div>
+
+
+  <h3 id="collapse">Eternal Schwarzschild Formed by Shell Collapse</h3>
+  <p>Constant radius line colors demonstrate radial matching at shell junction.</p>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3cUSjI5B0dLA75T2tviRP3CGRviXqF6d98T2ARqIxmfy3-TecI1fnux0jsl7hBknSLgKywnK9mZrM1IUa9n3D9phJ__UZMWt925jj0BQR3wORFofSPzOb4iVBffaKh_XsqXiNsrEynQSAcphF-tY-b7=s657-no?authuser=0">
+  </div>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3e7gPCvgCYH7p-RFNG_y-Roo2CL5ZSouz4WQG-h0_V0Q7FQn7WHaSTnNaKtFutI5BjYARh3zFeTh6M5PnxRV7iMwBpLdnloaKl-OdmIINuWEaKD67mgzeRUY_1L35p4VJaxAtr-s3O72uCPcJtei-aP=s657-no?authuser=0">
+  </div>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fo_-xP1gy7Z9eup8KZxOUKzCh4_TjGi7xEW4V1683VN-dRYpNxBoiXqjTVOu2WwJ4tFFaiwkHPBIIgKFCSFfspMKacxrWkMxSTlPtQwO_3UdDVy7gvaaSeHOM0D2cX4-7P_PPu5WYV2YbhSeuX8dtl=w92-h657-no?authuser=0" height=400px>
+  </div>
+
+  <h3 id="dtr">Shell Collisions</h3>
+    <p>Radius line colors again demonstrate matching. Note that inspection of the diagram alone does not reveal whether DTR is satisfied at the shell collision point. Radius lines are necessarily wiggly as constrained by the matching transformations.</p>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3deZm5EIxwru2WD2tHYayLA2VxPjc-1XyI8l9eM9Y5AIyPYVxRGL26LQr-TB9HJv3lQmAHLo_0ioAuDlDKGN--XrVQua4sL7u_5L7YdNWrv8B9At-aGVG4_4hdX6jxN5WMhbHT_Wojgtw6SMRKYrkWw=s657-no?authuser=0">
+  </div>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3cU6U5RP4maDDniHLNIJIkYNfTKtQsQDWmtDBLQ3ZLVWs-7so5RmotQaoTZ8hc_LydSOOiFk_zosBscIXWvU9oSoXm-xXI7NDsTrVCmLI1-eaQXKy2bNOCL64sB3HuxkXJyHJT-Q8OpgWCGdCkryho-=s657-no?authuser=0">
+  </div>
+
+
+  <h3 id="form-evap-schematic">Schematic: Forming and Evaporating Black Hole</h3>
+  <p>
+    Here is a schematic diagram for a forming and evaporating black hole.
+  </p>
+  <p>
+    This type of model follows on the works of Hiscock and Davies Fulling and Unruh; it is based on known semi-classical gravity effects, but is not known to be an exact model. The metric is effectively
+    \[ds^2 = - \left(1 - \tfrac{2 \, m(u,v)}{r(u,v)}\right) du \, dv + r(u,v)^2 \, d\Omega^2 \]
+    where the mass varies as a function of some null coordinates as depicted. However, note that that is a slight oversimplification.
+  </p>
+  <p>
+    For more details see Sec. III of <a href="https://arxiv.org/abs/2012.07973" target="_blank" rel="noopener noreferrer">arxiv:2012.07973</a>.
+  </p>
+  <p>
+    (Left) Schwarzschild. (Right) Same but with Hayward center; in this case there is a regular core and both inner and outer apparent horizons.
+  </p>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3e55r9w85kUTOSftWDeKajjrBNMzzj34rSZ5SfJTP_crR60wBE04zfGW-8UYUoqeh5yE4aooszv2mYMm9RisdH_9otVhh5HSqKdQW3roL7aOLubjv55WddBYgnQzq4pBXCee3_4NQgu5jdxwJk5zhUs=w466-h657-no?authuser=0">
+  </div>
+  <div class="diagram" style="max-width: 350px; margin-left: 50px;">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3d0uw3NlEzQVKny6lsr1X9jMjKclyLhenst0kxz0i2cG-W_U3HtrdG2BiEaP7PirsctXiu2wbEnbIyQm89nRvSR1wXB0sPxDdML8Z42Ji0LpUif0bgb7ft9oyuicFrY0Sv2LALpAg66mytLoQmyaiXK=w418-h657-no?authuser=0">
+  </div>
+
+  <h3 id="form-evap-hayward">Forming and Evaporating Hayward Black Hole</h3>
+  <p>
+    The spacetime depicted in this section is the Hayward case of the above <a href="#form-evap-schematic">schematic</a>. (For Schwarzschild case, just replace outer core surface with singularity.)
+  </p>
+  <p>
+    All three diagrams shown depict exactly the same spacetime. Although they look quite different, they are related by conformal transformations in the UV plane. Notice that some lines appearing null are only nearly so, and that in (c) the dense orange region is squished out of view (hidden behind the r=0 line). Each is useful for depicting a different timescale of the formation/evaporation process.
+  </p>
+  <p>
+    The orange region is an extremely dense "core" where quantum gravity effects are likely important. The apparent horizon is the boundary of the trapped sphere region (dotted fill). Lines of constant radius appear at various scales. Shells are shown by dotted and dashed lines. Tick marks depict equal intervals of proper time for an observer at infinity.
+  </p>
+  <p>
+    For more details see <a href="https://arxiv.org/abs/1907.04879" target="_blank" rel="noopener noreferrer">arxiv:1907.04879</a>.
+  </p>
+  <div class="diagrambox">
+    <div class="diagram" style="max-width: 23%;">
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3cS78Hq04ftwFqQomvq0Qq3745ugaOPTHHAoi9dxuRQEaS7n9HVzEgWSqraWb9pVOGrBNKXrKy_GbGUMG5ruPqvv-oNoP3CPH_Du4P3XmcRAfjpVan4W5anUYsIDrBF1eEwnVxS3pp5S2w9L1Xs7dEw=w458-h657-no?authuser=0">
+    </div>
+    <div class="diagram" style="max-width: 23%;">
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3dLzcy9sWMWkTqyMCmwsoYOjfg8Z7W-ZDKZQ_ngY9CdDcqVeQ5K8kNb-bIIYP6v-nt9E6bkKP7aWHfBWiyV_g7ZPftpTts2g3T4dPaTb69GlH3AcqzvQuV8ByJtpXDCkfKifnlMGYw4ZvOt25qNyjAv=w392-h657-no?authuser=0">
+    </div>
+    <div class="diagram" style="max-width: 23%;">
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3esR8Y1Hvu6O5PDz66vASnBQI1BMsyRgukpmOEbLpsBJsTg15I7UXW0HJpyKbgt_x9rJmyXS4BsiR-2d1Hsdz8kqY3-5UorNk7BlH_jlpfr0VL-tP7y_lSIzYIT8RJqs0hEHIPDZLUXBu1_4HBVfVCx=w392-h657-no?authuser=0">
+    </div>
+    <div class="diagram" style="max-width: 23%;">
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3c-xczLjM6YnJ4zRRpTincakIMi7cr-p_rj_VOhO7shsphjKSnx-2NPJctdxLSzxwUOdx1zFqtpWjvDiXFFfy9u6nvvHAoV4noQY3ZhA42tL5WsX4h_wHKIOZUTqYoUA1eoLrVTYTe-0YOG97x8rYgw=w392-h657-no?authuser=0">
+    </div>
+  </div>
+  <p>
+    The time dependence is approximated by shells in above figures as shown here on the left. On the right is a zoom of the formation process (although with slightly different parameters). You can see the apparent horizon jumping outward (becoming spacelike) during formation, and jumping inward (becoming timelike) during evaporation, while it is null in static patches.
+  </p>
+  <div class="diagram" style="max-width: 23%;">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3e3k-_KnFmsAkKABVsbcutJIaC-f_LRVy-IPQsucBoazN9-G7nMGsPA_FSfAgbgTkF_e0Cvm7fn05YhYTs3wZvTSkG0q5Wgq3tiJs1A2Zhz3AkXSmiB77_XNO5KuqONrs3wjrrj19hAOqB8vciH1xdy=w392-h657-no?authuser=0">
+  </div>
+  <div class="diagram" style="max-width: 23%; margin-left: 50px;">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3ccrhq6FDRBgF5GbcuOj1GoJN7yl1wxYB1ZocOXZARB8cy64D1z-1y_Dm7WsbkwUbxfWoTAgXyaJ35GwV7iOPEyApf0x_yU9EaoBbduX5fN-sq3rXihI-mQK1MR4vsAHe2mv1TkZP9p8h6lBEoTZqL_=w587-h657-no?authuser=0">
+  </div>
+
+  <h3 id="form-evap-dS">Forming and Evaporating Black Hole in dS/AdS Background</h3>
+  <p>
+    These are simplified models where formation/evaporation each occur in a single burst.
+    <br>Shown are Minkowski, de Sitter, and Anti de Sitter backgrounds.
+    <br>These have Hayward cores, but for Schwarzschild case just replace outer core surface with singularity.
+  </p>
+  <div class="diagram" style="max-width: 23%;">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fsD3lTFSPWXeKZ7ntFhjlF6V7wvwvPYnV9gLb_eKkQShEQglaiOhFNmpmjKTUQHR3rkyuL2X3Ybsj9N2ig9Np13oHDNQPjEQqCeVB3Tp_bHXrGKBzuf1iz_x66nQg1sKbD74I2OVcVFLgQUi-UBYpb=w392-h657-no?authuser=0">
+  </div>
+  <div class="diagram" style="max-width: 23%;">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3fcKsFRnsDG_ZdDmBlIsvjPyK2Ty_wTTf-aYpQhXcxPqxxnaHxssmWrnjHoQ_okgrJpENeWnEksYIIuN_WKeca2CXNsMknzN5igVku7-FpFcNXatgkSPO4TuNcKB4KRM7019swjHnKFrqaNIdKVWZ3m=w392-h657-no?authuser=0">
+  </div>
+  <div class="diagram" style="max-width: 23%;">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3dDG5aLbHEHPPH7K6TtG8Si4WjrAGoe0NbnyF5a7SZfX1p_QZTvtpw6WKtfZ5dfsOzOJxIPET4loHCJBKVAxg4aZkybJyAjE2UZIsA11Jv2PHTGI0FuoGXInTsK3FSZ630bNJ8PbgMf834yVLfpnRwK=w392-h657-no?authuser=0">
+  </div>
+
+  <h3 id="misc">Miscellaneous</h3>
+  <p>
+    Hayward spacetime in <a href="#kerr-schild">Kerr-Schild coordinates</a> (here \(t\) is Kerr-Schild time, not Schwarzschild time).
+  </p>
+  <div class="diagram">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3egHkJJ9IhoFkcWBKGiodhqmKcfy2KCHXpkmYONu4eIN-8Ww3tz05zXu4cSt4REF21eSTwal3R117Xyk4XNSLsOK2_c1iIhuDiT1PFyxKDYOjBM00M6OIdKpUmV2YKLYvQEgwZ0esLaN8QBm_BvPcFo=s657-no?authuser=0">
+  </div>
+</div>
+
+
+
+
+
+
+
